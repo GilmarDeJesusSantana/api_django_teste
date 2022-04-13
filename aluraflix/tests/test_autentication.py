@@ -19,7 +19,7 @@ class AuthenticationUserTesteCase(APITestCase):
 
     def test_requisicao_get_nao_autorizada(self):
         '''
-        Teste que verifica uma requisição GET sem autenticar.
+        Teste que verifica uma requisição GET não autorizada.
         '''
         response = self.client.get(self.list_url)
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)

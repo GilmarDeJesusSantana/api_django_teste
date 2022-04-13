@@ -12,6 +12,6 @@ class ProgramaViewSet(viewsets.ModelViewSet):
     filter_backends = [DjangoFilterBackend, filters.SearchFilter]
     search_fields = ['titulo']
     filterset_fields = ['tipo']
-    authentication_classes = [BasicAuthentication]
-    permission_classes = [IsAuthenticated]
+    # authentication_classes = [BasicAuthentication]
+    # permission_classes = [IsAuthenticated]
 
